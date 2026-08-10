@@ -1,0 +1,31 @@
+# Byte-compiled / cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambienti virtuali
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# --- Aggiunte specifiche del progetto Trading Report Tool ---
+
+# Report Excel generati e file di input (contengono dati reali: NON versionare)
+*.xlsx
+*.xls
+
+# Estratti conto MT4/MT5 di input (dati sensibili)
+*.htm
+*.html
+*.csv
+
+# File temporanei di Excel aperti
+~$*.xlsx
