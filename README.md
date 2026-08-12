@@ -1,7 +1,5 @@
 \# Trading Report Tool
 
-
-
 Strumenti in Python per generare report fiscali chiari e ordinati a partire
 
 dai dati di trading su piattaforme MetaTrader, pensati come ausilio alla
@@ -10,19 +8,11 @@ dichiarazione dei redditi e concepiti per essere comprensibili anche da chi non
 
 opera nel settore (commercialista, CAF, uffici competenti).
 
-
-
 \*\*Software proprietario - tutti i diritti riservati. Vedi \[LICENSE](LICENSE).\*\*
-
-
 
 \---
 
-
-
 \## A cosa serve
-
-
 
 Chi opera in trading su forex e CFD si trova spesso con estratti conto tecnici,
 
@@ -32,8 +22,6 @@ Questo progetto trasforma quei dati grezzi in un report Excel strutturato,
 
 con operazioni, totali calcolati e un glossario esplicativo integrato.
 
-
-
 Il report chiarisce fin da subito i punti che generano piu fraintendimenti - ad
 
 esempio che le operazioni "BUY" e "SELL" su strumenti come oro o coppie di valute
@@ -42,15 +30,9 @@ NON corrispondono ad acquisti o vendite fisiche di beni, ma a contratti
 
 finanziari (CFD) il cui unico esito e un profitto o una perdita in denaro.
 
-
-
 \---
 
-
-
 \## Struttura del progetto
-
-
 
 trading-report-tools/
 
@@ -64,25 +46,15 @@ trading-report-tools/
 
 |-- MetaTrader4/ strumenti per MetaTrader 4
 
-
-
 Tutti i moduli condividono lo stesso motore di analisi e producono lo stesso
 
 formato di report Excel a quattro fogli. Cambia solo la sorgente dei dati.
 
-
-
 \---
-
-
 
 \## MetaTrader5/
 
-
-
-\### report-tool-mt5-open-app \[PRONTO]
-
-
+\### report-tool-mt5-open-app
 
 Versione live: si collega al terminale MT5 aperto e loggato sul PC, scarica
 
@@ -90,13 +62,9 @@ lo storico delle operazioni per un periodo scelto, ricostruisce i trade completi
 
 e produce il report Excel.
 
-
-
 Adatta a chi ha il terminale MT5 disponibile e puo tenerlo aperto durante
 
 l'esecuzione.
-
-
 
 Funzionalità principali:
 
@@ -110,11 +78,7 @@ Funzionalità principali:
 
 \- Calcolo del profitto netto dei costi del broker (commissioni + swap)
 
-
-
-\### report-tool-mt5-from-file \[PRONTO]
-
-
+\### report-tool-mt5-from-file
 
 Versione da file: analizza un report di cronistoria MT5 esportato in formato
 
@@ -122,13 +86,9 @@ Versione da file: analizza un report di cronistoria MT5 esportato in formato
 
 report della versione live.
 
-
-
 Adatta a chi non puo o non vuole tenere l'applicazione aperta, o deve elaborare
 
 estratti forniti da terzi.
-
-
 
 Funzionalità principali:
 
@@ -142,19 +102,11 @@ Funzionalità principali:
 
 \- Calcolo del profitto netto dei costi del broker (commissioni + swap)
 
-
-
 \---
-
-
 
 \## MetaTrader4/
 
-
-
-\### report-tool-mt4-from-file \[IN SVILUPPO]
-
-
+\### report-tool-mt4-from-file
 
 Analisi dell'estratto conto MT4 esportato in formato .htm, con lo stesso motore
 
@@ -162,19 +114,11 @@ di analisi e lo stesso formato di report degli altri moduli. MetaTrader 4 non
 
 dispone della connessione diretta via Python, quindi il flusso e sempre da file.
 
-
-
 \---
-
-
 
 \## Report Excel prodotto
 
-
-
 Ogni modulo genera un file .xlsx con quattro fogli:
-
-
 
 \- Operazioni - dettaglio di ogni trade (strumento, volume, date, profitto)
 
@@ -184,15 +128,9 @@ Ogni modulo genera un file .xlsx con quattro fogli:
 
 \- Guida e glossario - spiegazioni a corredo per il lettore del report
 
-
-
 \---
 
-
-
 \## Requisiti
-
-
 
 \- Windows con terminale MetaTrader installato (per il modulo MT5 live)
 
@@ -202,15 +140,9 @@ Ogni modulo genera un file .xlsx con quattro fogli:
 
 \- pandas, openpyxl
 
-
-
 \---
 
-
-
 \## Note
-
-
 
 \- Tutti gli importi sono espressi nella valuta del conto (tipicamente USD).
 
@@ -222,11 +154,6 @@ di bollo, ecc.) sono di competenza dello studio commercialistico.
 
 consulenza fiscale.
 
-
-
 \---
 
-
-
 Copyright 2026 Nicola Vessio - Tutti i diritti riservati.
-
