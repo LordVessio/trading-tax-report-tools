@@ -30,7 +30,7 @@ Tutti i moduli condividono lo stesso motore di analisi e producono lo stesso for
 
 ## MetaTrader5/
 
-### report-tool-mt5-open-app
+### report-fiscale-mt5-open-app
 
 Nota: questo è il primo approccio del progetto, mantenuto come prototipo funzionante della connessione live via API. Per l'uso corrente si utilizza il modulo "da file" descritto sotto.
 
@@ -41,26 +41,27 @@ Adatta a chi ha il terminale MT5 disponibile e può tenerlo aperto durante l'ese
 Funzionalità principali:
 - Connessione al terminale MT5 e verifica del conto
 - Download dei deal per un intervallo di date definito
-- Separazione tra operazioni di trading e movimenti di cassa (depositi/prelievi)
+- Separazione tra operazioni di trading e movimenti di cassa
 - Ricostruzione dei trade completi per position_id
 - Calcolo del profitto netto dei costi del broker (commissioni + swap)
 
-### report-tool-mt5-from-file
+### report-fiscale-mt5-from-file
 
 Modulo definitivo per l'uso corrente. Analizza un report di cronistoria MT5 esportato in formato .xlsx, senza bisogno di tenere il terminale aperto. Stesso motore e stesso report della versione live, ma con l'intervallo di date già contenuto nell'estratto: si imposta una sola volta, nel terminale, al momento dell'esportazione.
 
 Funzionalità principali:
 - Individuazione automatica del file esportato da MT5 nella cartella
 - Estrazione delle operazioni già abbinate da MT5 (apertura + chiusura)
-- Separazione tra operazioni di trading e movimenti di cassa (depositi/prelievi)
+- Classificazione dei movimenti di cassa in quattro categorie (deposito, prelievo, performance fee, altro)
 - Lettura automatica dei dati del conto dall'intestazione del file
 - Calcolo del profitto netto dei costi del broker (commissioni + swap)
+- Riepilogo con periodo delle operazioni, totali per categoria e risultato netto al netto delle performance fee
 
 ---
 
 ## MetaTrader4/
 
-### report-tool-mt4-from-file
+### report-fiscale-mt4-from-file
 
 Analisi dell'estratto conto MT4 esportato in formato .htm, con lo stesso motore di analisi e lo stesso formato di report degli altri moduli. MetaTrader 4 non dispone della connessione diretta via Python, quindi il flusso è sempre da file.
 
@@ -71,8 +72,8 @@ Analisi dell'estratto conto MT4 esportato in formato .htm, con lo stesso motore 
 Ogni modulo genera un file .xlsx con quattro fogli:
 
 - Operazioni - dettaglio di ogni trade (strumento, volume, date, profitto)
-- Riepilogo - dati del conto e totali fiscali, calcolati con formule
-- Movimenti di cassa - depositi e prelievi, tenuti separati dai trade
+- Riepilogo - dati del conto, periodo, totali fiscali e totali dei movimenti di cassa, calcolati con formule
+- Movimenti di cassa - depositi, prelievi e performance fee, distinti per categoria e tenuti separati dai trade
 - Guida e glossario - spiegazioni a corredo per il lettore del report
 
 ---
