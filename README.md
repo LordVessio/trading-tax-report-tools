@@ -1,4 +1,4 @@
-# Trading Report Tool
+# Trading Tax Report Tools
 
 Strumenti in Python per generare report fiscali chiari e ordinati a partire dai dati di trading su piattaforme MetaTrader, pensati come ausilio alla dichiarazione dei redditi e concepiti per essere comprensibili anche da chi non opera nel settore (commercialista, CAF, uffici competenti).
 
@@ -16,13 +16,13 @@ Il report chiarisce fin da subito i punti che generano più fraintendimenti - ad
 
 ## Struttura del progetto
 
-trading-report-tools/
-|-- README.md
-|-- LICENSE
-|-- .gitignore
-|-- MetaTrader5/ strumenti per MetaTrader 5
-|-- MetaTrader4/ strumenti per MetaTrader 4
+Il progetto `trading-tax-report-tools/` contiene:
 
+- `README.md` - questa guida
+- `LICENSE` - licenza proprietaria
+- `.gitignore` - file e cartelle esclusi dal versionamento
+- `MetaTrader5/` - strumenti per MetaTrader 5
+- `MetaTrader4/` - strumenti per MetaTrader 4
 
 Tutti i moduli condividono lo stesso motore di analisi e producono lo stesso formato di report Excel a quattro fogli. Cambia solo la sorgente dei dati.
 
