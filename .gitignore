@@ -21,6 +21,8 @@ ENV/
 # Report Excel generati e file di input (contengono dati reali: NON versionare)
 *.xlsx
 *.xls
+# eccezione: il report d'esempio anonimo per la vetrina va versionato
+!docs/report_esempio_anonimo.xlsx
 
 # Estratti conto MT4/MT5 di input (dati sensibili)
 *.htm
