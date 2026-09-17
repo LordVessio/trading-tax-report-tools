@@ -40,6 +40,23 @@ Nella cartella [`docs/`](docs/) è disponibile un report d'esempio anonimo ([`re
 Il documento è composto da quattro fogli: elenco delle operazioni con subtotali mensili, riepilogo fiscale, movimenti di cassa e guida con glossario.
 
 ---
+## Il progetto in cinque slide
+
+[![Copertina del progetto](docs/slide_01_cover.png)](docs/Trading_Tax_Report_Tools_deck.pdf)
+
+<details>
+<summary><b>Sfoglia tutte le slide</b></summary>
+
+![Il problema](docs/slide_02_problema.png)
+![La soluzione](docs/slide_03_soluzione.png)
+![La sfida tecnica](docs/slide_04_sfida.png)
+![Strumenti e risultati](docs/slide_05_strumenti.png)
+
+</details>
+
+La presentazione completa e' anche in PDF: [Trading_Tax_Report_Tools_deck.pdf](docs/Trading_Tax_Report_Tools_deck.pdf).
+
+---
 
 ## Competenze tecniche dimostrate
 
